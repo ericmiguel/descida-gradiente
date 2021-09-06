@@ -7,14 +7,15 @@ authors = ["ericmiguel <eric.mrib@gmail.com>"]
 # https://mypy.readthedocs.io/en/stable/config_file.html
 [[tool.mypy.overrides]]
 module = [
-    "pandas",
-    "boto3"
+    "sklearn"
 ]
 ignore_missing_imports = true
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 pydantic = "^1.8.2"
+simpy = "^4.0.1"
+scikit-learn = "^0.24.2"
 
 [tool.poetry.dev-dependencies]
 isort = "^5.8.0"
